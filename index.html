@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <style>
+  /* Фиксированный размер для главного фото */
+  .my-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;   /* фото обрезается, но не искажается */
+    border-radius: 50%;  /* круглая рамка */
+  }
+
+  /* Фиксированный размер для фото в карточках */
+  .card-img-top {
+    width: 100%;         /* по ширине карточки */
+    height: 200px;       /* фиксированная высота */
+    object-fit: cover;   /* чтобы не растягивалось */
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как я провел лето</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Заголовок -->
+  <div class="container text-center mt-4">
+    <h1>Как я провел лето</h1>
+    <p class="text-muted">Немного о моих летних каникулах</p>
+  </div>
+
+  <!-- Фото и текст -->
+  <div class="container mt-4">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+        <!-- Замени ссылку на свое фото -->
+        <img src="./sun.jpg" alt="Мое фото" class="my-photo">
+      </div>
+      <div class="col-md-8">
+        <p>Этим летом я отдыхал на море, гулял с друзьями и много фотографировал. Было тепло, весело и совсем не хотелось возвращаться на учебу.</p>
+        <p>Больше всего запомнилась поездка на море и поход с палаткой.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Три карточки -->
+  <div class="container mt-4">
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./sea1.jpg" class="card-img-top" alt="Море">
+          <div class="card-body">
+            <h5 class="card-title">Море</h5>
+            <p class="card-text">Купался, загорал, катался на катамаране</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./palatka.jpg" class="card-img-top" alt="Горы">
+          <div class="card-body">
+            <h5 class="card-title">Природа</h5>
+            <p class="card-text">Ходил в поход с палаткой и ночевал у костра</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./cat.jpg" class="card-img-top" alt="Друзья">
+          <div class="card-body">
+            <h5 class="card-title">Друзья</h5>
+            <p class="card-text">Гулял с друзьями почти каждый день</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <div class="container text-center mt-4 mb-4">
+    <p class="text-muted">© Мое лето 2026</p>
+  </div>
+
+</body>
+</html>
